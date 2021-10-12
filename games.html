@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <title>RETO 2</title>
+</head>
+<body>
+<h1> Games Oracle Cloud</h1>
+<h2></h2>
+<div id="resultado"></div>
+<br>
+<div>
+    <input type="number" id="id" placeholder="ID">
+    <input type="text" id="developer" placeholder="Developer">
+    <input type="number" id="minage" placeholder="Min. Age">
+    <input type="number" id="category_id" placeholder="Category ID">
+    <input type="text" id="name" placeholder="Name">
+</div>
+<br>
+<button id="ver" onclick="peticionGet()">Game List</button>
+<button id="agregar" onclick="peticionPost()">Add Game</button>
+<button onclick="peticionPut()">Edit Game Data</button>
+<br>
+<br>
+<form action="index.html" target="_self">
+    <button>Back to Index</button>
+</form> 
+
+<script src="js/scriptgames.js"></script>
+</body>
+</html>
